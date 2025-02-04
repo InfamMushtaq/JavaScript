@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn{
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 17%;
+    top: 50%;
+    height: 30px;
+    width: 100px;
+}
+ .light{
+    background-color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    border: black solid 2px;
+}
+.dark{
+    background-color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    border:  white solid 2px;
+}
+.bdark{
+    background-color: black;
+    opacity: 1;
+    transition: 2s ease-in-out;
+}
+.blight{
+    background-color:  white;
+    opacity: 1;
+    transition: 2s ease-in-out;
+}
+ 
