@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="outer">
+            <div class="buttondiv"><button id="btn" class="light"> Dark Mode</button></div>
+            <div class="inner">
+                <p class="tittle">Stone Paper Scissors</p>
+            </div>
+            <p class="rules">Rules of Stone-Paper-Scissors  Stone-Paper-Scissors is a simple game played between two people. Each player has to choose one of three shapes:  Stone   Paper  Scissors    Winning Rules  The winner is determined by the following rules:  1. Stone beats Scissors (Stone crushes Scissors)  2. Scissors beats Paper (Scissors cut Paper)  3. Paper beats Stone (Paper covers Stone)  Draw Rule  If both players choose the same shape, the game is a draw and must be replayed.  How to Play    1. The winner is determined based on the rules above.    2. If it's a draw, the players go again until there is a winner.
+            </p>
+        </div>
+    </header>
+    <div class="choices">
+        <div class="choice" id="stone"><img src="stone.jpg"  ></div>
+        <div class="choice" id="paper"><img src="paper.jpg"  ></div>
+        <div class="choice" id="scissor"><img src="scissor.jpg"  ></div>
+    </div>
+    <div class="scorecard">
+        <div class="user">
+            <p>YOU</p>
+            <div id="userscore">0</div>
+        </div>
+        <div class="computer">
+            <p>BOT</p>
+            <div id="computerscore">0</div>
+        </div>
+    </div>
+</body>
+<script src="game.js"></script>
+</html>

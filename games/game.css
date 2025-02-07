@@ -1,0 +1,131 @@
+
+*{
+margin:0;
+padding: 0;
+}
+.outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    background-color: #50c9ce;
+}
+.inner{
+     text-align: center;
+    height: 50;
+    width: 200px;
+    display: inline;
+    background-color: #2e382e;
+    border-radius: 10% 10% 10% 10%;
+    box-shadow: 2px 2px 10px  #fa1814,-2px -2px 10px #1053ef;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+    position: fixed;
+    z-index: 2;
+}
+.tittle{
+    color:#50c9ce;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 3rem;
+}
+.choice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    height: 100px;
+    border-radius: 10% 10% 10% 10%;
+    object-fit: cover;
+    box-shadow: 2px 2px 10px  #fa1814,-2px -2px 10px #1053ef;
+    transition:0.3s ease-in-out;
+}
+img{
+    width:100px;
+    height: 100px;
+    border-radius:10% 10% 10% 10%;;
+   
+}
+.choice:hover{
+    filter: drop-shadow();
+    transform: scale(1.1);
+   cursor: pointer;
+}
+.scorecard{
+    display:flex;
+    justify-content: center;
+    margin-top:60px;
+    gap: 70px;
+}
+.user,.computer{
+    text-align: center;
+    color:#e32389;
+}
+#computerscore,#userscore{
+    box-shadow: 2px 2px 10px  #fa1814,-2px -2px 10px #1053ef;
+     padding-top: 20px;
+     margin-top: 5px;
+     background-color: #50c9ce;
+     width:40px;
+     height: 40px;
+     color:beige;
+     border-radius: 10% 10% 10% 10%;
+}
+.rules{
+    margin-top:50%;
+     align-self: flex-end;
+    color: yellow;
+    white-space: nowrap;
+    font-size: 8px;
+    animation:slide 120s infinite linear
+}
+@keyframes slide{
+    0%{
+        translate: 75%;
+    }
+    100%{
+        translate:-75%;
+    }
+}
+.buttondiv{
+    position:absolute;
+    top: 27px;
+    right: 15px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+}
+ 
+#btn{
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 17%;
+    top: 50%;
+    height: 20px;
+    width: 70px;
+}
+ .light{
+    background-color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    border: black solid 2px;
+    box-shadow: 2px 2px 10px  #fa1814,-2px -2px 10px #1053ef;
+}
+.dark{
+    background-color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    border:  white solid 2px;
+    box-shadow: 2px 2px 10px  #fa1814,-2px -2px 10px #1053ef;
+}
+.bdark{
+    background-color: black;
+    opacity: 1;
+    transition: 2s ease-in-out;
+}
+.blight{
+    background-color:  white;
+    opacity: 1;
+    transition: 2s ease-in-out;
+}
+ 
